@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #4682b4;
     margin: 0;
     padding: 20px;
 }
 .container {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #87cefa;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,11 +25,13 @@ input[type="tel"] {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin-top: 20px;
+    
 }
 button {
     padding: 10px 20px;
@@ -45,4 +47,21 @@ button {
 .btn-cancel {
     background-color: red;
     color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.btn-cancel:hover {
+    background-color: rgb(231, 0, 0);
+}
+
+.btn-save:hover {
+    background-color: rgb(4, 114, 4);
 }
