@@ -30,31 +30,22 @@ input[type="tel"] {
 .buttons {
     display: flex;
     justify-content: end;
-    margin-top: 20px;
-    
 }
-button {
+a {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
-.btn-save {
+.btn-confirm {
     background-color: green;
     color: white;
 }
 .btn-cancel {
     background-color: red;
     color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-right: 5px;
 }
 
@@ -62,6 +53,6 @@ button {
     background-color: rgb(231, 0, 0);
 }
 
-.btn-save:hover {
+.btn-confirm:hover {
     background-color: rgb(4, 114, 4);
 }
