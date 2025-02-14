@@ -39,3 +39,8 @@ th {
 .btn-cancel:hover {
     background-color: rgb(231, 0, 0);
 }
+
+ a {
+    color: #007BFF;
+    text-decoration: none;
+}
