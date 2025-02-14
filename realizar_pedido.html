@@ -43,12 +43,33 @@
             <div class="add"><a href="" class="btn-add">Adicionar ao pedido</a></div>
             
             <h3>Resumo do Pedido</h3>
-            <div class="resumo">
-                <p id="resumo_sabores">Sabores: Nenhum selecionado</p>
-                <p id="resumo_quantidade">Quantidade: 0</p>
-                <p id="resumo_total">Valor Total: R$ 0,00</p>
+            <div class="order-summary">
+                <div class="order-item">
+                    <p><strong>Sabor:</strong> Chocolate</p>
+                    <p class="total-price2">Quantidade</p>
+                    <div class="quantity-control">
+                        <button class="btn-quantity-">-</button>
+                        <span class="quantity">2</span>
+                        <button class="btn-quantityplus">+</button>
+                    </div>
+                    <p class="total-price"><strong>Total:</strong> R$ 20,00</p>
+                </div>
+                
+                <div class="order-item">
+                    <p><strong>Sabor:</strong> Morango</p>
+                    <p class="total-price2">Quantidade</p>
+                    <div class="quantity-control">
+                        <button class="btn-quantity-">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn-quantityplus">+</button>
+                    </div>
+                    <p class="total-price"><strong>Total:</strong> R$ 10,00</p>
+                </div>
+                
+                <div class="total">Total: R$ 30,00</div>
             </div>
-            
+            <!-- Métodos de pagamento -->
+            <form action="/finalizar-pagamento" method="POST">
             <div class="buttons">
                 <a href="tela_inicial.html" class="btn-cancel">Voltar</a>
                 <a href="pagamento.html" class="btn-confirm">Confirmar pedido</a>

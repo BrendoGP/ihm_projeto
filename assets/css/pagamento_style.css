@@ -22,10 +22,19 @@ h2 {
     margin-right: 10px;
 }
 .total-price {
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 1.6em;
+    margin: 20px auto; 
+    padding: 10px;
     font-weight: bold;
+    background-color: white;
+    text-align: center;
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content; 
 }
+
+
 .buttons {
     display: flex;
     justify-content: end;
