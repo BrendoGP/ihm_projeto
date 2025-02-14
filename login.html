@@ -16,19 +16,11 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha" placeholder="Digite sua senha" required>
 
-            <button type="submit" class="btn-login">Entrar</button>
+            <a href="tela_inicial.html" class="btn-login">Entrar</a>
         </form>
-
         <div class="register-link">
             <p>Não tem uma conta? <a href="cadastrar_cliente.html">Cadastre-se</a></p>
         </div>
     </div>
-    <script>
-        
-        document.getElementById('login-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o comportamento padrão de envio do formulário
-            window.location.href = 'tela_inicial.html';
-        });
-    </script>
 </body>
 </html>
