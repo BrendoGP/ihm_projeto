@@ -5,6 +5,7 @@ body {
     padding: 20px;
 }
 .container {
+    position: relative;
     max-width: 400px;
     margin: 0 auto;
     background-color: #87cefa;
@@ -43,16 +44,24 @@ a {
     background-color: green;
     color: white;
 }
-.btn-cancel {
-    background-color: red;
-    color: white;
-    margin-right: 5px;
-}
-
-.btn-cancel:hover {
-    background-color: rgb(231, 0, 0);
-}
-
 .btn-confirm:hover {
     background-color: rgb(4, 114, 4);
+}
+
+
+/* Botão de Fechar (X) */
+.close-btn {
+    position: absolute;
+    top: 1px;
+    right: 10px; /* Ajustado para alinhar dentro da div */
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    border: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: rgb(0, 0, 0);
 }

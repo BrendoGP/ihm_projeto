@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/pedido_style.css">
     <title>Realizar Pedido</title>
-    
 </head>
 <body>
     <div class="container">
+        <!-- Botão de fechar (X) no canto superior direito -->
+        <div class="close-btn" onclick="window.location.href='tela_inicial.html'">×</div>
+
         <h1>Realizar Pedido</h1>
         <form>
             <label for="sabor">Escolha o sabor:</label>
@@ -68,12 +70,13 @@
                 
                 <div class="total">Total: R$ 30,00</div>
             </div>
+
             <!-- Métodos de pagamento -->
             <form action="/finalizar-pagamento" method="POST">
-            <div class="buttons">
-                <a href="tela_inicial.html" class="btn-cancel">Voltar</a>
-                <a href="pagamento.html" class="btn-confirm">Confirmar pedido</a>
-            </div>
+                <div class="buttons">
+                    <a href="pagamento.html" class="btn-confirm">Confirmar pedido</a>
+                </div>
+            </form>
         </form>
     </div>
 </body>
